@@ -1,100 +1,157 @@
-import React from 'react'
-// import { Link } from 'react-router-dom';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import {   FaReact, FaNodeJs  } from 'react-icons/fa'
-import { SiJavascript, SiMongodb } from 'react-icons/si'
+import React, { useState } from 'react';
+// react icons
+import {AiFillGithub} from 'react-icons/ai';
+import {FiExternalLink} from 'react-icons/fi';
 
-function Projects() {
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+
+// import './styles.css';
+
+// import required modules
+import { EffectCards } from 'swiper/modules';
+import { Controller } from 'swiper/modules';
+
+//imported images
+import { Swiper, SwiperSlide } from "swiper/react";
+import RecipeImg from '../images/Recipeapp.png'
+import VoyageImg from '../images/Voyage.png'
+import JuggernutImg from '../images/Juggernut.png'
+import SayitImg from '../images/SayitImg.webp'
+import HabitualImg from '../images/Habitual.png'
+
+// React Reveal
+import Slide from 'react-reveal/Slide';
+
+// React Icons
+import {BsArrowLeftCircle, BsArrowRightCircle} from 'react-icons/bs'
+
+
+function Projects(popularRef) {
+    const [controller, setController] = useState(null);
+
+
   return (
-           <>
-           <div className='projects'>
-           <h3 className='projectsanddevelopment'>Projects & Development</h3>
-           <VerticalTimeline>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(242, 242, 242)', color: 'rgb(3, 3, 3)' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    iconStyle={{ background: 'rgb(3, 3, 3)', color: 'rgb(94,210,243)' }}
-                    icon={<FaReact />}
-                >
-                    <div className='container'>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>React</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>ExpressJs</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>NodeJs</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>PostreSQL</span></div>
-                    </div>
-                    <h3 className="vertical-timeline-element-title">Voyage</h3>
-                    <p>A website created from my hobby of travelling. This is my current running project encompassing user registration, wish-list destinations on dashboard and search ability for locations with a response of key facts and things-to-do.</p>
-                    <a className='demo-links' href='https://voyaga-react.netlify.app/'>Demo</a>
-                    <a className='demo-links' href='https://github.com/aditi2605/voyage-react/'>Source Code</a>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(242, 242, 242)', color: 'rgb(3, 3, 3)' }}
-                    iconStyle={{ background: 'rgb(3, 3, 3)', color: 'rgb(255,255,0)' }}
-                    icon={<SiJavascript />}
-                >
-                    <div className='container'>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>HTML</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>CSS</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>Javascript</span></div>
-                    </div>
-                    <h3 className="vertical-timeline-element-title">Juggenaut Bistro</h3>
-                    <p>
-                    Sprouted from my idea of having a fusion bistro for Indian street-food and the
-UK cafe culture. The logo and design have come from the same fundamental idea, created using Photoshop and images are used from a stock source.
-                    </p>
-                    <a className='demo-links' href='https://voyaga-react.netlify.app/'>Demo</a>
-                    <a className='demo-links' href='https://github.com/aditi2605/Projects/tree/main/Juggernaut-Cafe'>Source Code</a>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(242, 242, 242)', color: 'rgb(3, 3, 3)' }}
-                    iconStyle={{ background: 'rgb(3, 3, 3)', color: 'rgb(50,205,50)' }}
-                    icon={<SiMongodb />}
-                >
-                    <div className='container'>
-                     <div className='project-leng' role='button'><span className='project-leng-span'>HTML</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>CSS</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>Javascript</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>ExpressJs</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>MongoDB</span></div>
-                    </div>
-                    <h3 className="vertical-timeline-element-title">Sayit
-</h3>
-                    <p>
-                    Created an anonymous forums for users to express their thoughts. The functionality had likes, react via emoticons and comment features such that users can interact with posts.
-                    </p>
-                    <a className='demo-links' href='https://github.com/aditi2605/SayIt'>Source Code</a>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(242, 242, 242)', color: 'rgb(3, 3, 3)' }}
-                    iconStyle={{ background: 'rgb(3, 3, 3)', color: 'rgb(50,205,50)' }}
-                    icon={<FaNodeJs />}
-                >
-                    <div className='container'>
-                   <div className='project-leng' role='button'><span className='project-leng-span'>React</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>ExpressJs</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>NodeJs</span></div>
-                    <div className='project-leng' role='button'><span className='project-leng-span'>MongoDB</span></div>
-                    </div>
-                    <h3 className="vertical-timeline-element-title">Recipe Diary</h3>
-                    <p>
-                    This is a RESTful web-app providing recipe management for users. With CRUD endpoints to recipes, along with user authentication and personalised dashboard, managing your favorite recipes in one place has made it more convenient.
-                    </p>
-                    <a className='demo-links' href='https://recipe-applicationv1.netlify.app/'>Demo</a>
-                    <a className='demo-links' href='https://github.com/aditi2605/Recipe-App'>Source Code</a>
-                </VerticalTimelineElement>
-                
-               
-  
-            </VerticalTimeline>
+    <>
+    <h3 className='skill-title'>Some Things I’ve Built </h3>
+      <div className='project-section'>  
+        <Slide left duration={1000}>
+            <div popularRef={popularRef} className='projects'> 
+                        <Swiper 
+                                effect={"cards"}
+                                grabCursor={true}
+                                // modules={[EffectCards]}
+                                className="swiperImg"
+                                modules={[Controller, EffectCards]}
+                                // onSwiper={setFirstSwiper}
+                                controller={{ control: controller }}
+                        >
+                        <SwiperSlide className='swiper-slide-active'>
+                                <img className='Img1' src={RecipeImg} alt='' />
+                                {/* value={card.skills)  */}
+                                {/* onChange={handleSwipeCard}  */}
+                        </SwiperSlide> 
+                        <SwiperSlide>
+                                <img className='Img2' src={VoyageImg} alt='' /> 
+                                {/* value={card.skills}
+                                onChange={handleSwipeCard} */}
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img className='Img3' src={JuggernutImg} alt='' /> 
+                                {/* value={card.skills}
+                                onChange={handleSwipeCard} */}
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img className='Img4' src={SayitImg} alt='' />
+                                {/* value={card.skills}
+                                onChange={handleSwipeCard} */}
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <img className='Img5' src={HabitualImg} alt='' />
+                                {/* value={card.skills}
+                                onChange={handleSwipeCard} */}
+                        </SwiperSlide>        
+                    </Swiper>
+                    <div className='swiper-arrows'>
+                        <span className='left-arrow'><BsArrowLeftCircle /></span>
+                        <span className='right-arrow'><BsArrowRightCircle /></span>
+                    </div>  
             </div>
-            <hr />
-        </>
+        </Slide>
+           {/* Right Swiper */}
+           <Slide right duration={1000}>
+                <div popularRef={popularRef} className='skills-dec'>
+    
+                    <Swiper
+                        effect={"cards"}
+                        grabCursor={true}
+                        // modules={[EffectCards]}
+                        className="swiperDec"
+                        modules={[EffectCards,Controller]}
+                        onSwiper={setController}
+                        
+                    >
+                        <SwiperSlide className='r-swiperSlide'>
+                            <div className='r-main'>
+                                
+                                <h4 className='r-main-tilte'>Recipe Diary</h4>
+                                <p className='r-main-para'>This is a RESTful web-app providing recipe management for users. With CRUD endpoints to recipes, along with user authentication and personalised dashboard, managing your favorite recipes in one place has made it more convenient.</p>
+                                <a className='demo-links' href='https://recipe-applicationv1.netlify.app/'><FiExternalLink/></a>
+                                <a className='demo-links' href='https://github.com/aditi2605/Recipe-App'><AiFillGithub /></a> 
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='r-swiperSlide'>
+                            <div className='r-main'>
+                                <h4 className='r-main-tilte'>Voyage</h4>
+                                <p className='r-main-para'>A website created from my hobby of travelling. This is my current running project encompassing user registration, wish-list destinations on dashboard and search ability for locations with a response of key facts and things-to-do.</p>
+                                <a className='demo-links' href='https://voyaga-react.netlify.app/'><FiExternalLink/></a>
+                                <a className='demo-links' href='https://github.com/aditi2605/voyage-react/'><AiFillGithub /></a>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='r-swiperSlide'>
+                            <div className='r-main'>
+                                <h4 className='r-main-tilte'>Juggenaut Bistro</h4>
+                                <p className='r-main-para'>Sprouted from my idea of having a fusion bistro for Indian street-food and the UK cafe culture. The logo and design have come from the same fundamental idea, created using Photoshop and images are used from a stock source.</p> 
+                                <a className='demo-links' href='https://voyaga-react.netlify.app/'><FiExternalLink/></a>
+                                <a className='demo-links' href='https://github.com/aditi2605/Projects/tree/main/Juggernaut-Cafe'><AiFillGithub /></a>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='r-swiperSlide'>
+                            <div className='r-main'>
+                                <h4 className='r-main-tilte'>Sayit</h4>
+                                <p className='r-main-para'>Created an anonymous forums for users to express their thoughts. The functionality had likes, react via emoticons and comment features such that users can interact with posts.</p> 
+                                <a className='demo-links' href='https://github.com/aditi2605/SayIt'><AiFillGithub /></a>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='r-swiperSlide'>
+                            <div className='r-main'>
+                                <h4 className='r-main-tilte'>Habitual</h4>
+                                <p className='r-main-para'>This is a RESTful web-app providing recipe management for users. With CRUD endpoints to recipes, along with user authentication and personalised dashboard, managing your favorite recipes in one place has made it more convenient.</p> 
+                                <a className='demo-links' href='https://fabulous-mandazi-cf3f12.netlify.app/'><FiExternalLink/></a>
+                                <a className='demo-links' href='https://github.com/aditi2605/lap2_project'><AiFillGithub /></a>
+                            </div>
+                        </SwiperSlide>
+                
+                    </Swiper>
+                    <div className='swiper-arrows'>
+                        <span className='left-arrow'><BsArrowLeftCircle /></span>
+                        <span className='right-arrow'><BsArrowRightCircle /></span>
+                    </div>
+                </div>
+             </Slide>
+        </div>
+    </>
   )
 }
 
 export default Projects
+
+
+
+
+
+
+
+
+

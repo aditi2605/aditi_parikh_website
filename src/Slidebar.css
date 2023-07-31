@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.dark-light-mode-btn {
+  flex:1;
+ 
+
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+.dark-light-mode-lamp {
+  width: 50px;
+  height: auto;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  transform: rotateZ(-4deg) translateZ(0px);
+  animation-direction: alternate;
+}
+
+.right-side {
+  flex:1
+}
