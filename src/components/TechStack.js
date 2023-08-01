@@ -18,7 +18,7 @@ function TechStack() {
                         </div>
                         <div className="hexa-flip-card-back">
                             <p className='hexa-flip-card-back-p'>HTML5</p> 
-                            <p className='hexa-flip-card-back-p'>2 Years Exp</p>
+                            <p className='hexa-flip-card-back-p'>2 Yr<br/> Exp</p>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ function TechStack() {
                         </div>
                         <div className="hexa-flip-card-back">
                             <p className='hexa-flip-card-back-p'>CSS3</p> 
-                            <p className='hexa-flip-card-back-p'>2 Years Exp</p>
+                            <p className='hexa-flip-card-back-p'>2 Yr <br/> Exp</p>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ function TechStack() {
                         </div>
                         <div className="hexa-flip-card-back">
                             <p className='hexa-flip-card-back-p'>JS</p> 
-                            <p className='hexa-flip-card-back-p'>2 Years Exp</p>
+                            <p className='hexa-flip-card-back-p'>2 Yr <br/> Exp</p>
                         </div>
                     </div>
                 </div>
@@ -50,8 +50,8 @@ function TechStack() {
                             <span className='icons'><SiExpress/></span>
                         </div>
                         <div className="hexa-flip-card-back">
-                            <p className='hexa-flip-card-back-p'>Express<br/>JS</p> 
-                            <p className='hexa-flip-card-back-p'>1 Years Exp</p>
+                            <p className='hexa-flip-card-back-p'>Ex.JS</p> 
+                            <p className='hexa-flip-card-back-p'>1 Yr <br/> Exp</p>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ function TechStack() {
                         </div>
                         <div className="hexa-flip-card-back">
                             <p className='hexa-flip-card-back-p'>NodeJS</p> 
-                            <p className='hexa-flip-card-back-p'>1 Years Exp</p>
+                            <p className='hexa-flip-card-back-p'>1 Yr <br/> Exp</p>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ function TechStack() {
                         </div>
                         <div className="hexa-flip-card-back">
                             <p className='hexa-flip-card-back-p'>React</p> 
-                            <p className='hexa-flip-card-back-p'>2 Years Exp</p>
+                            <p className='hexa-flip-card-back-p'>2 Yr <br/> Exp</p>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ function TechStack() {
                         </div>
                         <div className="hexa-flip-card-back">
                             <p className='hexa-flip-card-back-p'>VueJS</p> 
-                            <p className='hexa-flip-card-back-p'>1Years Exp</p>
+                            <p className='hexa-flip-card-back-p'>1 Yr <br/> Exp</p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ function TechStack() {
                         </div>
                         <div className="hexa-flip-card-back">
                             <p className='hexa-flip-card-back-p'>Python</p> 
-                            <p className='hexa-flip-card-back-p'>1 Years Exp</p>
+                            <p className='hexa-flip-card-back-p'>1 Yr <br/> Exp</p>
                         </div>
                     </div>
                 </div>
@@ -107,8 +107,8 @@ function TechStack() {
                             <span className='icons'>< SiMongodb/></span>
                         </div>
                         <div className="hexa-flip-card-back">
-                            <p className='hexa-flip-card-back-p'>MongoDB</p> 
-                            <p className='hexa-flip-card-back-p'>1 Years Exp</p>
+                            <p className='hexa-flip-card-back-p'>Mongo<br />DB</p> 
+                            <p className='hexa-flip-card-back-p'>1 Yr <br/> Exp</p>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ function TechStack() {
                         </div>
                         <div className="hexa-flip-card-back">
                             <p className='hexa-flip-card-back-p'>MySQL</p> 
-                            <p className='hexa-flip-card-back-p'>1 Years Exp</p>
+                            <p className='hexa-flip-card-back-p'>1 Yr <br/> Exp</p>
                         </div>
                     </div>
                 </div>

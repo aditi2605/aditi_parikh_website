@@ -29,6 +29,10 @@ body {
   background-color: var(--primary-color);
   color:var(--secondary-color);
   font-family: 'Space Mono', monospace;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
   
 }
 
@@ -317,7 +321,9 @@ border-style: dashed;
 .section-1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-block: 115px; 
   margin-inline: 90px;  
   animation: fadeIn 5s; 
@@ -442,13 +448,14 @@ border-style: dashed;
   margin-top: 50px;
   width: 100%;
   height: auto;
-  
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
 }
- 
 .hexa-flip-card {
   position: relative;
-  width: 80px;
-  height: 65px;
+  width: 85px;
+  height: 68px;
   cursor: pointer;
   border: none;
   perspective: 1000px; /* Defines the distance between the z=0 plane and the user in order to give the 3D perspective effect */
@@ -511,8 +518,6 @@ border-style: dashed;
   
 }
 
-
-
 @media (max-width:1165px) {
   .section-1 {
     margin-block: 150px;
@@ -532,9 +537,6 @@ border-style: dashed;
 }
 
 @media (max-width:1135px) {
-  .Typewriter {
-    font-size: xx-large;
-  }
   .hero-main {
     flex: 1;
     margin-block:30px;
@@ -602,9 +604,19 @@ border-style: dashed;
     padding: 15px 20px;
    }
    .skill-hexa-card  {
-    margin-inline: 20px;
+    margin-inline: 10px;
+  }
+  .hexa-flip-card {
+    width: 75px;
+    height: 68px;
   }
  }
+
+ @media (max-width:496px) {
+  .skill-hexa-card  {
+    margin-inline: 0px;
+  }
+  }
 
 
 /**** About Page ****/
@@ -883,14 +895,14 @@ margin-top: 0px;
   color: gray;
 }
 
-@media (max-width:908px){
+@media (max-width:996px){
   .vl {
     display: none;
   }
 
   .title {
     margin-top: 0px;
-    margin-bottom: 2300px;
+    margin-bottom: 2400px;
   }
 
   .main {
@@ -1348,6 +1360,19 @@ margin-top: 0px;
 }
 }
 
+@media (max-width:634px){
+
+  .projects {
+    margin-right: 80px;
+ 
+}
+.skills-dec {
+  margin-right: 80px;
+
+}
+
+}
+
 @media(max-width:599px){
 
   .project-section {
@@ -1371,7 +1396,21 @@ margin-top: 0px;
   }
 }
 
-@media(max-width:438px) {
+@media(max-width:530px) {
+  .projects {
+    margin-right: 0px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+ 
+}
+.skills-dec {
+  margin-right: 0px;
+  align-content: center;
+    justify-content: center;
+    text-align: center;
+
+}
   .swiper-wrapper {
     overflow: hidden ;
   }
