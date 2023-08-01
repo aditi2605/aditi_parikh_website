@@ -104,6 +104,12 @@ h3 {
   color: var(--primary-color);
 }
 
+@media (max-width:1920px){
+  .theme {
+    left:301px;
+  }
+}
+
 @media (max-width:1261px){
   .theme {
     position: absolute;
@@ -449,7 +455,6 @@ border-style: dashed;
   flex: 1;
   margin-top: 50px;
   width: 100%;
-  height: auto;
   align-items: center;
   justify-content: center;
   text-align: center; 
@@ -518,6 +523,11 @@ border-style: dashed;
   transform: rotateY(180deg);
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   
+}
+@media (max-width:1920){
+  .section-1 {
+    margin-block: 350px;
+  }
 }
 
 @media (max-width:1165px) {
@@ -610,8 +620,9 @@ border-style: dashed;
   }
   .hexa-flip-card {
     width: 75px;
-    height: 68px;
+    height: 69px;
   }
+
  }
 
  @media (max-width:496px) {
@@ -619,6 +630,14 @@ border-style: dashed;
     margin-inline: 0px;
   }
   }
+/* 
+  @media (max-width:416px) {
+    .skill-hexa-card  {
+      margin-left: 3px;
+    }
+    } */
+
+
 
 
 /**** About Page ****/
@@ -663,9 +682,6 @@ border-style: dashed;
     margin-inline: 50px;
   }
 }
-
-
-
 
 .projectsanddevelopment {
   align-items: center;
@@ -734,6 +750,15 @@ a {
   100% { transform: translateY(0); }
 }
 
+@media (max-width:1920){
+  .down-arrow-section {
+    margin-block: 80px;
+  }
+  .down-arrow {
+    margin-block: 150px; 
+  }
+}
+
 
 /* Journey Timeline */
 .vertical-timeline-element-content {
@@ -776,6 +801,12 @@ a {
   padding-block: 150px;
   /* margin-bottom: 40%;; */
   margin-bottom: 8px;
+}
+
+@media(max-width:1920px){
+  .main {
+  padding-block: 240px;
+  }
 }
 
 .leftSide {

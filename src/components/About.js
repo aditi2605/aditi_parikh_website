@@ -13,7 +13,7 @@ function About() {
                     <h1 className='hero-heading'> <span className="wave">👋</span> I' am Aditi. </h1>
                     <p className='hero-para'>I’am a Full-Stack Developer who is passionate about technology, learning new things and creating truly beautiful Websites and Softwares.</p>
                     <Link to='' className='hero-btn' onClick={() => window.location = 'mailto:aditi.parikh0526@gmail.com'}><span className='chat-icon'><TbBrandHipchat/></span>Let's Connect</Link>
-                    <TechStack />
+                    <TechStack />        
                 </div>
                 <div className='hero-Img'>
                   <img className='main-img' src={myImg} alt='myImg' />
