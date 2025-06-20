@@ -1,11 +1,13 @@
 import React from 'react'
-import Particle from '../components/Particle'
-import Nav from '../components/Nav'
+import Hero from '../components/Hero.jsx';
+import Nav from '../components/Nav.jsx';
+
+
 
 function SpaPage() {
   return (
     <div>
-      <Particle />
+      <Hero />
       <Nav />
     </div>
   )

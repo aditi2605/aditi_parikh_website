@@ -9,7 +9,7 @@ import bootstrapIcon from '../images/icons8-bootstrap.png'
 import javascriptIcon from '../images/icons8-javascript.png'
 import reactIcon from '../images/icons8-react.png'
 import vueIcon from '../images/icons8-vue-js.png'
-import nodejsIcon from '../images/icons8-node-js.png'
+// import nodejsIcon from '../images/icons8-node-js.png'
 import tailwindIcon from '../images/icons8-tailwind-css.png'
 import pythonIcon from '../images/icons8-python.png'
 import mysqlIcon from '../images/icons8-mysql.png'
@@ -23,14 +23,14 @@ function Main() {
     };
   return (
         <>
-          <div className='particaljs-container'>
+          <div className='absolute top-0 left-0 w-full h-full z-10 pointer-events-none"'>
                <Particles
                 id="tsparticles"
                 init={particlesInit}
                 options={{
                   fullScreen: {
                     enable: true,
-                    zIndex: 1
+                    background: { color: 'transparent' }
                   },
                   detectRetina: true,
                   fpsLimit: 60,
@@ -189,11 +189,11 @@ function Main() {
                           width: 40,
                           height: 50
                         },
-                        {
-                          src: nodejsIcon,
-                          width: 40,
-                          height: 50
-                        },
+                        // {
+                        //   src: nodejsIcon,
+                        //   width: 40,
+                        //   height: 50
+                        // },
                         {
                           src: reactIcon,
                           width: 40,
